@@ -38,7 +38,6 @@ router.get('/teachers/:email/students', (req, res) => {
 
 router.get('/students/:email/assignments', (req, res) => {
     try {
-        console.log('Email: ', req.params.email)
         let student: Student = new Student(req.params.email)
         let assignments = student.getAssignments()
         JSONResponse.success(req, res, null, assignments)
