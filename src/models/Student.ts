@@ -11,7 +11,7 @@ class Student extends User {
 
     getAssignments(): Object {
         return {
-            "Question - 1": "Which is the national bird of country India?", 
+            "Question - 1": "Which is the national bird of country India?",
             "Question - 2": "Which is the biggest animal?"
         };
     }

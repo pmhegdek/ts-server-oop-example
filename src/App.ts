@@ -1,6 +1,6 @@
 import * as express from 'express'
 import router from './routes/index'
-import * as bodyParser  from 'body-parser';
+import * as bodyParser from 'body-parser';
 //import request from 'express';
 class App {
     public express
@@ -10,7 +10,7 @@ class App {
         this.loadRoutes()
     }
 
-    private loadRoutes() : void {
+    private loadRoutes(): void {
         this.express.use('/', router);
     }
 }

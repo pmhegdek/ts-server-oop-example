@@ -21,9 +21,9 @@ class User {
         this.ID = Math.round(Math.random() * 10000)
     }
 
-    getJsonObject():Object {
+    getJsonObject(): Object {
         return {
-            email: this.email, 
+            email: this.email,
             name: this.name,
             pwd: this.pwd,
             role: this.role,
